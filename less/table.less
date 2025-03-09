@@ -1,0 +1,55 @@
+.container{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    box-shadow: @sombra;
+    background: @text-color;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Estilos para los encabezados */
+thead {
+    background: @background;
+    color: @text-color;
+    text-transform: uppercase;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+/* Bordes entre filas */
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Efecto al pasar el cursor */
+tbody tr:hover {
+    background: rgba(8, 76, 188, 0.1);
+}
+
+/* Ajuste de columnas */
+th:first-child, td:first-child {
+    border-left: none;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+/* Responsivo: Hace que la tabla se desplace en pantallas pequeñas */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
