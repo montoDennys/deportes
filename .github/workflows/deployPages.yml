@@ -1,4 +1,4 @@
-name: Despliegue a github Pages del MPA con vite
+name: Despliegue a github Pages del MPA con vite 1
 
 on:
   push:
